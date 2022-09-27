@@ -8,9 +8,33 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  font-family: 'Noto Sans', sans-serif;
+  color: #636363;
+}
+
+
+.bold{
+  font-weight: 700;
+}
+
+.mt-7{
+  margin-top: 70px;
+}
+
+.img-slide{
+  height: 70px;
+}
+
+
+.slider{
+  overflow-x: hidden;
 }
 
 a {
@@ -30,6 +54,14 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+.bg-nav{
+  background-color: #05579Ee9 !important;
+}
+
+.ln{
+  line-height: 35px !important;
 }
 
 /*--------------------------------------------------------------
@@ -2367,6 +2399,7 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: #fff;
 }
 
