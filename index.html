@@ -37,22 +37,23 @@
   
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex align-items-center justify-content-between">
+  <header id="header" class="fixed-top d-flex align-items-center bg-nav">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html"><img src="assets/img/favicon.png" class="img-fluid">REIN</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="download.html">Download</a></li>
-          <li><a class="nav-link">Blog</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      <div class="d-flex align-items-center justify-content-start">
+        <h1 class="logo"><a href="index.html"><img src="assets/img/favicon.png" class="img-fluid logo">reinlang</a></h1>
+        <nav id="navbar" class="navbar d-flex justify-content-between">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home page</a></li>
+            <li><a class="nav-link scrollto" href="download.html">Download</a></li>
+            <li><a class="nav-link">Blog page</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+      <div class="d-flex justify-content-end align-items-center">
+      </div>
 
     </div>
   </header><!-- End Header -->
@@ -170,28 +171,6 @@
       </div>
     </section>
 
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container py-20" data-aos="zoom-in">
-
-        <!-- <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
- -->
-      </div>
-    </section><!-- End Clients Section -->
-
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
       <div class="container-fluid">
@@ -205,34 +184,21 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
 
             <div class="content">
-              <h3>Some frequently asked questions. Users' <strong>opinion.</strong></h3>
-              <p>Here are some questions normally asked about the language from friends and one for our communication platforms.</p>
-            </div>
+              <h3 class="bold dark">Something about krein as a language.</h3>
 
-            <div class="accordion-list">
-              <ul>
-                <li data-aos="fade-up" data-aos-delay="100">
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span>What syntax does krein support ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>The language supports both indentation and the C styled syntax with some keywords got from major languages and others based on some concepts.</p>
-                  </div>
-                </li>
+              <div class="mt-4">
+                <p>Here are some questions normally asked about the language from friends and one for our communication platforms.</p>
 
-                <li data-aos="fade-up" data-aos-delay="200">
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> What datatypes does krein use ?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>The language supports numbers, strings, array[lists], objects / dictionaries and some non major you are yet tofindout if you watch the get started tutorial.</p>
-                  </div>
-                </li>
+                <h4 class="bold mt-5">Speed</h4>
+                <p class="">Krein is not a fast language but this is being worked on, this project is still in beta version so as time passes expect things like speed to have increased greatly since it is even on of the aims for creating the language</p>
 
-                <li data-aos="fade-up" data-aos-delay="300">
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Is krein a fast programming language ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>No, but this is being worked on, this project is still in beta version so as time passes expect things like speed to have increased greatly since it is even on of the aims for creating the language.</p>
-                  </div>
-                </li>
+                <h4 class="bold mt-5">Extensive</h4>
+                <p class="">Krein can utilize power that was not even offered in the main build, this is through modulization or using code that is out of your project written by someone else or yourself. This also helps in large project handling.</p>
 
-              </ul>
+
+                <h4 class="bold mt-5">Error & bugs</h4>
+                <p class="">Try catch methods are included in the package alhtough there function is not yet revised for better functioning. But if you write good code that can handle its errors in form of validation, you are very safe to use the language.</p>
+              </div>
             </div>
 
           </div>
@@ -253,7 +219,7 @@
 
         <div class="row" data-aos="zoom-in">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3>Must read</h3>
+            <h3 class="dark">Let me tell you something</h3>
             <p>The project is still in beta so don't expect everything to go the right way if you encounter an issues, please raise it so we can solve it with immediate effect.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
