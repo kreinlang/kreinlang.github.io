@@ -41,7 +41,7 @@
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
       <div class="d-flex align-items-center justify-content-start">
-        <h1 class="logo"><a href="index.html"><img src="assets/img/favicon.png" class="img-fluid logo">reinlang</a></h1>
+        <h1 class="logo"><a href="index.html">kreinlang</a></h1>
         <nav id="navbar" class="navbar d-flex justify-content-between">
           <ul>
             <li><a class="nav-link scrollto" href="index.html">Home page</a></li>
@@ -147,7 +147,7 @@
     <section>
       <div class="px-2">
         <p class="text-center text-dark h2">The features you may need.</p>
-        <p class="text-center h5 ln mt-4">The krein language has many features and utilities that support all platforms they<br> are used on. From writing and reading files, calling system process, Krein lang enables<br> developers and do some os related tasks and non provided out of the box.</p>
+        <p class="text-center mt-4">The krein language has many features and utilities that support all platforms they<br> are used on. From writing and reading files, calling system process, Krein lang enables<br> developers and do some os related tasks and non provided out of the box.</p>
         <p class="bold mt-4 text-center">Checkout some of our <a href="#" class="">modules</a>.</p>
 
         <div class="flex align-items-center slider mt-7 justify-content-center">
@@ -175,13 +175,37 @@
     <section id="why-us" class="why-us">
       <div class="container-fluid">
 
-        <div class="row justify-content-around">
+        <div class="row justify-content-center">
 
-          <div class="col-lg-4 align-items-stretch position-relative video-box" style='background-image: url("assets/img/cpu.png");' data-aos="fade-right">
-            <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn mb-4"></a> -->
+          <div class="col-lg-5 d-flex flex-wrap align-items-center" data-aos="fade-right">
+            <h4 class="bold mt-5 dark">Simple Example</h4>
+            <div class="editor mt-3 py-2 px-3">
+              <code>use Time
+
+class Student {
+  def this(name, grade) {
+    this.name = name
+    this.grade = grade
+    this.registered = Time.now()
+  }
+
+  def details() {
+    return `I am {this.name} and am in grade {this.grade}, I registered at {this.registered}`;
+  }
+}
+
+c = []
+
+c.push(Student('Rogers', 'B'))
+c.push(Student('Kenneth', 'B'))
+c.push(Student('Pretty', 'A'))
+
+for i in c
+  print(i.details())</code>
+            </div>
           </div>
 
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
 
             <div class="content">
               <h3 class="bold dark">Something about krein as a language.</h3>
@@ -189,15 +213,17 @@
               <div class="mt-4">
                 <p>Here are some questions normally asked about the language from friends and one for our communication platforms.</p>
 
-                <h4 class="bold mt-5">Speed</h4>
+                <h4 class="bold mt-4">Speed</h4>
                 <p class="">Krein is not a fast language but this is being worked on, this project is still in beta version so as time passes expect things like speed to have increased greatly since it is even on of the aims for creating the language</p>
+                <p class="neath"></p>
 
-                <h4 class="bold mt-5">Extensive</h4>
+                <h4 class="bold mt-4">Extensive</h4>
                 <p class="">Krein can utilize power that was not even offered in the main build, this is through modulization or using code that is out of your project written by someone else or yourself. This also helps in large project handling.</p>
+                <p class="neath"></p>
 
-
-                <h4 class="bold mt-5">Error & bugs</h4>
+                <h4 class="bold mt-4">Error & bugs</h4>
                 <p class="">Try catch methods are included in the package alhtough there function is not yet revised for better functioning. But if you write good code that can handle its errors in form of validation, you are very safe to use the language.</p>
+                <p class="neath"></p>
               </div>
             </div>
 
@@ -229,6 +255,48 @@
 
       </div>
     </section><!-- End Cta Section -->
+
+
+    <section class="books">
+      <div class="container">
+        <h3 class="mb-5">Learning sources and more.</h3>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a class="sources" href="">Krein odyessy</a></h4>
+              <p class="description mt-3">A beginner's book is available for download or with a donation option. Much to get you started with krein is included and the docs are updated regularly.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a class="sources" href="">Prein</a></h4>
+              <p class="description mt-3">A package manager for the krein programming language that is still in development with no release out yet but promising to do it as soon as possible.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a class="sources" href="">Changelog</a></h4>
+              <p class="description mt-3">Get info of the newly added and deleted features of the language. It's here you will find old versions if your previous code is not compatible with new krein.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a class="sources" href="">Community</a></h4>
+              <p class="description mt-3">Form a krein commmunity, link to your already made community or join one of ours where we share ideas that look forward on the next softwares to build.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 
 
   </main><!-- End #main -->
