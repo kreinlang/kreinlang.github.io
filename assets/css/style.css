@@ -559,6 +559,11 @@ h6 {
   transition: 0.3s;
 }
 
+.hero2 {
+  height: auto !important;
+  background: url("../img/bg2.svg") top center !important;
+}
+
 #hero:before {
   content: "";
   /*background: rgba(6, 101, 183, 0.9);*/
