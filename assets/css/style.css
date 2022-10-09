@@ -551,7 +551,8 @@ h6 {
   height: 80vh;
   overflow: hidden;
   position: relative;
-  background: url("../img/bg.svg") top center;
+  background-color: #4040DB !important;
+  background: url("../img/wave.svg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
