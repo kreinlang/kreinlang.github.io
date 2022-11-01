@@ -14,7 +14,9 @@
   <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -27,6 +29,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
+  <link href="assets/css/fancy.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -38,118 +41,71 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center bg-nav">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-
+    <div class="container-fluid px-7 px-1-sm d-flex align-items-center justify-content-between">
       <div class="d-flex align-items-center justify-content-start">
-        <h1 class="logo"><a href="index.html">kreinlang</a></h1>
+        <p class="logo"><a href="index.html">Kreinlang</a></p>
         <nav id="navbar" class="navbar d-flex justify-content-between">
           <ul>
-            <li><a class="nav-link scrollto" href="index.html">Home page</a></li>
-            <li><a class="nav-link scrollto" href="download.html">Download</a></li>
-            <li><a class="nav-link scrollto" href="issues.html">Discover & Issue</a></li>
-            <li><a class="nav-link scrollto" href="issues.html">News</a></li>
-            <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
+            <li><a class="nav-link scrollto" href="index.html">DOCUMENTATION</a></li>
+            <li><a class="nav-link scrollto" href="download.html">DOWNLOAD</a></li>
+            <li><a class="nav-link scrollto" href="issues.html">NEWS AND IDEAS</a></li>
+            <li><a class="nav-link scrollto" href="#contact">CONTACT US</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
       </div>
-      <div class="d-flex justify-content-end align-items-center">
-      </div>
-
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Krein</span></h2>
-          <p class="animate__animated animate__fadeInUp">Krein is a programming language designed for simplifying software building, such as simple CLI and Socket applications. It is developed by Variable Code and it is simplify a runtime or interpreter. It is an object-oriented and class-based.</p>
-          <a href="download.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Package</a>
+  <!-- landing -->
+    <div class="pb-15 pt-20 landing">
+      <div class="flex flex-Rcolumn-sm align-items-center grid-container-sm justify-content-center">
+        <div class="col-3 col-9-sm">
+          <p class="text-xl-5 text-white">Download the latest release to start development.</p>
+          <p class="text-white text-lg mt-4">The readable code allows you to easily learn how to code, enjoy doing a project so get your package.</p>
+          <a href="download.html"><p class="mt-5 px-3 py-2 round-sm bg-indigo-500 text-white w-max-content">download 0.11.2</p></a>
+        </div>
+        <div class="col-3 pb-5-sm col-7-sm">
+          <img src="assets/img/1.svg" class="img">
         </div>
       </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">A simple coding language</h2>
-          <p class="animate__animated animate__fadeInUp">The language has very easy syntax and offers tweaks around the syntax you should use. It looks neat and clean with short and few keywords to easily rememeber and format.</p>
-          <a href="download.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Package</a>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">That makes programming fun</h2>
-          <p class="animate__animated animate__fadeInUp">The language is still in beta version and some functionality is not yet included yet but if it can fulfill you task, i suggest you go for it, it will be fun.</p>
-          <a href="download.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Package</a>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-      </a>
-
     </div>
-  </section><!-- End Hero -->
+
+    <div class="px-7 px-0-sm flex justify-content-center py-10">
+      <div class="grid-container col-9 col-10-md grid-4 grid-1-md">
+        <div class="col">
+          <div class="px-4 px-1-sm px-2-md">
+              <p class="text-xl-3">Cross Platform</p>
+              <p class="description mt-3">One code base or the same script can be used on any supported operating system that has krein installed.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="px-4 px-1-sm px-2-md">
+              <p class="text-xl-3">Dynamic typing</p>
+              <p class="description mt-3">Variables can handle any datatype 'Just leave it for the interpreter' this makes life very easy with weak typing included.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="px-4 px-1-sm px-2-md">
+              <p class="text-xl-3">Reliable</p>
+              <p class="description mt-3">As so long as you can build you project with krein, i think it won't cause alot of issues and it will have to work.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="px-4 px-1-sm px-2-md">
+              <p class="text-xl-3">Concepts</p>
+              <p class="description mt-3">New ideas ae to be embedded in the language for as long as we are still developing it so it becomes a tool for solve alot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <main id="main">
 
-    <!-- ======= Icon Boxes Section ======= -->
-    <section id="icon-boxes" class="icon-boxes">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Cross Platform</a></h4>
-              <p class="description">One code base or the same script can be used on any supported operating system that has krein installed.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Dynamic typing</a></h4>
-              <p class="description">Variables can handle any datatype 'Just leave it for the interpreter' this makes life very easy with weak typing included.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Reliable</a></h4>
-              <p class="description">As so long as you can build you project with krein, i think it won't cause alot of issues and it will have to work.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4 class="title"><a href="">Concepts</a></h4>
-              <p class="description">New ideas ae to be embedded in the language for as long as we are still developing it so it becomes a tool for solve alot.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Icon Boxes Section -->
-
-    <section>
       <div class="px-2">
-        <p class="text-center text-dark h2">The features you may need.</p>
-        <p class="text-center mt-4">The krein language has many features and utilities that support all platforms they<br> are used on. From writing and reading files, calling system process, Krein lang enables<br> developers and do some os related tasks and non provided out of the box.</p>
-        <p class="bold mt-4 text-center">Checkout some of our <a href="#" class="">modules</a>.</p>
+        <p class="text-center text-dark text-xl-3">The features you may need.</p>
+        <p class="text-center mt-3">The krein language has many features and utilities that support all platforms they<br> are used on. From writing and reading files, calling system process, Krein lang enables<br> developers and do some os related tasks and non provided out of the box.</p>
+        <p class="mt-3 text-center">Checkout some of our <a href="#" class="">modules</a>.</p>
 
         <div class="flex align-items-center slider mt-7 justify-content-center">
           <div class="container py-20 col-8 col-10-sm">
@@ -168,31 +124,25 @@
             </div>
           </div>
         </div>
-
       </div>
-    </section>
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
-      <div class="container-fluid">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-5 d-flex flex-wrap align-items-center">
-            <h4 class="bold mt-5 dark">Simple Example</h4>
-            <div class="editor mt-3 py-2 px-3">
-              <code>use Time
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 d-flex flex-wrap align-items-center">
+          <h4 class="bold mt-5 dark">Simple Example</h4>
+          <div class="editor mt-3 py-2 px-3">
+            <code>use Time
 
 class Student {
-  def __init__(name, grade) {
-    this.name = name
-    this.grade = grade
-    this.registered = Time.now()
-  }
+def __init__(name, grade) {
+  this.name = name
+  this.grade = grade
+  this.registered = Time.now()
+}
 
-  def details() {
-    return `I am {this.name} and am in grade {this.grade}, I registered at {this.registered}`;
-  }
+def details() {
+  return `I am {this.name} and am in grade {this.grade}, I registered at {this.registered}`;
+}
 }
 
 c = []
@@ -202,61 +152,30 @@ c.push(Student('Kenneth', 'B'))
 c.push(Student('Pretty', 'A'))
 
 for i in c
-  print(i.details())
+print(i.details())
 </code>
-            </div>
           </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch">
-
-            <div class="content">
-              <h3 class="bold dark">Something about krein as a language.</h3>
-
-              <div class="mt-4">
-                <p>Here are some questions normally asked about the language from friends and one for our communication platforms.</p>
-
-                <h4 class="bold mt-4">Speed</h4>
-                <p class="">Krein is not a fast language but this is being worked on, this project is still in beta version so as time passes expect things like speed to have increased greatly since it is even on of the aims for creating the language</p>
-                <p class="neath"></p>
-
-                <h4 class="bold mt-4">Extensive</h4>
-                <p class="">Krein can utilize power that was not even offered in the main build, this is through modulization or using code that is out of your project written by someone else or yourself. This also helps in large project handling.</p>
-                <p class="neath"></p>
-
-                <h4 class="bold mt-4">Error & bugs</h4>
-                <p class="">Try catch methods are included in the package alhtough there function is not yet revised for better functioning. But if you write good code that can handle its errors in form of validation, you are very safe to use the language.</p>
-                <p class="neath"></p>
-              </div>
-            </div>
-
-          </div>
-
         </div>
 
-      </div>
-    </section><!-- End Why Us Section -->
+        <div class="col-lg-6 d-flex flex-column justify-content-center ">
 
-    <div class="py-20 bg-white">
-      <p class="py-20"></p>
+          <div class="">
+            <p class="text-xl-2">Something about krein as a language.</p>
+            <p>Here are some questions normally asked about the language from friends and one for our communication platforms.</p>
+            <p class="text-xl">Speed</p>
+            <p class="">Krein is not a fast language but this is being worked on, this project is still in beta version so as time passes expect things like speed to have increased greatly since it is even on of the aims for creating the language</p>
+
+            <p class="text-xl mt-6">Extensive</p>
+            <p class="">Krein can utilize power that was not even offered in the main build, this is through modulization or using code that is out of your project written by someone else or yourself. This also helps in large project handling.</p>
+
+            <p class="text-xl mt-6">Error & bugs</p>
+            <p class="">Try catch methods are included in the package alhtough there function is not yet revised for better functioning. But if you write good code that can handle its errors in form of validation, you are very safe to use the language.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3 class="dark">Let me tell you something</h3>
-            <p>The project is still in beta so don't expect everything to go the right way if you encounter an issues, please raise it so we can solve it with immediate effect.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Report Issue</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
 
 
     <section class="books">
