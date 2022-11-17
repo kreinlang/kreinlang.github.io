@@ -49897,6 +49897,10 @@ a-sm{
 	color: #9F7AEA;
 }
 
+.text-left-sm{
+	text-align: left !important;
+}
+
 .text-purple-600-sm{
 	color: #805AD5;
 }
