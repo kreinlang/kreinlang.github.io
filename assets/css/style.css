@@ -11,8 +11,7 @@
 
 
 @import url('http://fonts.cdnfonts.com/css/proxima-nova-2');
-                
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 body {
   font-family: 'Source Sans Pro', sans-serif !important;
@@ -21,11 +20,27 @@ body {
 }
 
 .landing{
-  background-color: #4040DB;
+  background-image: url('../img/wave.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4E4EEB;
 }
 
 .langing *{
   color: white !important;
+}
+
+
+.pn *{
+  font-family: 'Poppins', sans-serif;
+}
+
+.pnn{
+  font-family: 'Poppins', sans-serif;
+}
+
+.pn2{
+  font-weight: 300;
 }
 
 
@@ -90,9 +105,9 @@ h6 {
 }
 
 .editor *{
-  font-size: 14px;
+  font-size: 16px;
   white-space: pre;
-  /*font-family: monospace !important;*/
+  font-family: 'Inconsolata' ,monospace !important;
 }
 
 /*--------------------------------------------------------------
@@ -128,53 +143,6 @@ h6 {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #0880e8;
-  border-top-color: #bfe0fd;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -243,11 +211,9 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
   z-index: 997;
-  height: 50px;
-  /*top: 60px;*/
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.05);
 }
 
 #header *{

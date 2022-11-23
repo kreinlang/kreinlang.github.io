@@ -97,7 +97,7 @@
         }
       }
     }
-    window.addEventListener('load', headerScrolled)
+    // window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
 
@@ -113,7 +113,7 @@
         backtotop.classList.remove('active')
       }
     }
-    window.addEventListener('load', toggleBacktotop)
+    // window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
 

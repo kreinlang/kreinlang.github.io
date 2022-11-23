@@ -41,16 +41,16 @@
   
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center bg-nav">
-    <div class="container-fluid px-7 px-1-sm d-flex align-items-center justify-content-between">
-      <div class="d-flex w-100 align-items-center justify-content-around">
+  <header id="header" class="fixed-top py-2 d-flex align-items-center bg-nav">
+    <div class="container-fluid pn px-7 px-1-sm d-flex align-items-center justify-content-between">
+      <div class="flex w-100 align-items-center justify-around justify-between-sm px-2-sm">
         <p class="logo"><a href="index.html">Kreinlang</a></p>
         <nav id="navbar" class="navbar d-flex justify-content-between">
           <ul>
-            <li><a class="nav-link scrollto" href="index.html">DOCUMENTATION</a></li>
-            <li><a class="nav-link scrollto" href="download.html">DOWNLOAD</a></li>
-            <li><a class="nav-link scrollto" href="issues.html">NEWS AND IDEAS</a></li>
-            <li><a class="nav-link scrollto" href="#contact">CONTACT US</a></li>
+            <li><a class="nav-link text-xl scrollto" href="index.html">Documentation</a></li>
+            <li><a class="nav-link text-xl scrollto" href="download.html">Download</a></li>
+            <li><a class="nav-link text-xl scrollto" href="issues.html">News and updates</a></li>
+            <li><a class="nav-link text-xl scrollto" href="#contact">Contact us</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -59,7 +59,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div class="landing py-10 px-2">
+  <div class="landing py-10 px-2 pn">
       <h3 class="animate__animated text-left-sm text-center mt-5 animate__fadeInDown center-text text-white "><span class="thin">Discover</span> daily news concerning krein<br><span class="thin">it could benefit you.</span></h3>
       <div class="mt-3">
         <p class="text-center text-white text-left-sm">Info about updates on bugs is presented here. so read through.</p>
@@ -67,39 +67,23 @@
       </div>
   </div>
 
-  <section class="">
-    <div class="container mt-5 d-flex justify-content-center">
-      <div class="col-8 col-10-xs">
-        <p class="">Daily and previous news.</p>
+  <div class="px-20 py-20">
+    <div class="flex justify-center">
+      <div class="col-7">
+        <p class="text-xl-4">Read daily project updates.</p>
 
-          <div class="news mt-5 animate__animated animate__fadeInUp">
-            <h5>Module names now start with small letter.</h5>
-            <p class="">Recently module names were starting with a capital letter but an update is made so please accept the change like from <span class="bold">Math</span> to <span class="bold">math</span>.</p>
-          </div>
-
-          <div class="news mt-5 animate__animated animate__fadeInUp">
-            <h5>From <span class="bold">def</span> to <span>function</span>.</h5>
-            <p class="">No create functions the javascript way not python, it defines the code more making it very readbale to theory programming beginners.</p>
-          </div>
-
-          <div class="news mt-5 animate__animated animate__fadeInUp">
-            <h5>Error reports are being worked on.</h5>
-            <p class="">PropertyError and undefined code can now be reported by the enterpreter during runtime. More are yet to be implemented. Note that different error names are to be used that fully explain the type of error more than the already exisiting ones in other programming languages.</p>
-          </div>
-
-          <div class="news mt-5 animate__animated animate__fadeInRight">
-            <h5>Conversion positive overflow bug fixed.</h5>
-            <p class="">This error occured when the interpreter was working with big numbers has it had to convert it to a long value that should be used in array indexing. By then you would only work with numbers less than 4.2e10. Now you can exceed to any if am right.</p>
-          </div>
-
-        <div class="news mt-5 animate__animated animate__fadeInRight">
-          <h5>Krein's odyessy Book is yet to be released.</h5>
-          <p class="">Some information I have about it includes, the book shall be released on early access/incomplete <a href="" class="bold">checkout</a>. Because it is the only docs we have so far.</p>
+        <div class="">
+          <p class="text-xl">random module is now stable and fit to use.</p>
+          <p class="text-md">The functionality provided by the random module now has been improved and raised to a level fit to workin a project. So it is stable for use.</p>
         </div>
 
+        <div class="mt-5">
+          <p class="text-xl">def keyword is now function</p>
+          <p class="text-md">After realizing how the function keyword is more descriptive than the def keyword. I would prefer using it since it even the one used by the most famous programming language javascript.</p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
 
   <!-- ======= Footer ======= -->
@@ -167,7 +151,6 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

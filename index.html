@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Krein</title>
-  <meta content="" name="description">
+  <meta content="programming language" name="description">
   <meta content="krein programming language" name="keywords">
 
   <!-- Favicons -->
@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -29,8 +31,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/fancy.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/fancy.css" rel="stylesheet">
 
 </head>
 
@@ -40,16 +42,16 @@
   
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center bg-nav">
-    <div class="container-fluid px-7 px-1-sm d-flex align-items-center justify-content-between">
-      <div class="d-flex w-100 align-items-center justify-content-around">
+  <header id="header" class="fixed-top py-2 d-flex align-items-center bg-nav">
+    <div class="container-fluid pn px-7 px-1-sm d-flex align-items-center justify-content-between">
+      <div class="flex w-100 align-items-center justify-around justify-between-sm px-2-sm">
         <p class="logo"><a href="index.html">Kreinlang</a></p>
         <nav id="navbar" class="navbar d-flex justify-content-between">
           <ul>
-            <li><a class="nav-link scrollto" href="index.html">DOCUMENTATION</a></li>
-            <li><a class="nav-link scrollto" href="download.html">DOWNLOAD</a></li>
-            <li><a class="nav-link scrollto" href="issues.html">NEWS AND IDEAS</a></li>
-            <li><a class="nav-link scrollto" href="#contact">CONTACT US</a></li>
+            <li><a class="nav-link text-xl scrollto" href="index.html">Documentation</a></li>
+            <li><a class="nav-link text-xl scrollto" href="download.html">Download</a></li>
+            <li><a class="nav-link text-xl scrollto" href="issues.html">News and updates</a></li>
+            <li><a class="nav-link text-xl scrollto" href="#contact">Contact us</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -58,40 +60,42 @@
   </header><!-- End Header -->
 
   <!-- landing -->
-    <div class="pb-15 pt-20 landing">
-      <div class="flex flex-Rcolumn-sm align-items-center grid-container-sm justify-content-center">
-        <div class="col-4 col-9-sm">
-          <p class="text-xl-8 text-white">Download the latest release to start development.</p>
-          <p class="text-white text-xl mt-4">The krein readable code allows you to easily learn how to code, enjoy doing projects with the language so get your package right away.</p>
-          <a href="download.html"><p class="mt-5 px-5 py-3 uppercase round-sm bg-indigo-500 text-white w-max-content">download 0.11.2</p></a>
+    <div class="pb-15 pt-20 pn landing">
+      <div class="flex flex-Rcolumn-sm align-items-center justify-center">
+        <div class="col-6 col-9-sm text-center">
+          <p class="big-1 text-xl-7-sm mt-10 text-center-sm text-white">A Simple coding language that interprets code.</p>
+          <p class="text-white text-xl-2 text-lg-sm text-center-sm mt-4 pn2">Krein is an object oriented programming language, that interprets code and full support for dynamic typing. Even offering modern features.</p>
+
+          <p class="text-white text-xl-2 text-lg-sm text-center-sm mt-4 pn2">I suggest you try it, you won't regret but be thankful.</p>
+
+          <div class="flex align-items-center justify-center">
+            <a href="download.html"><p class="mt-10 px-5 py-3 round-md bg-white text-dark pn w-max-content">Install krein 0.0.7</p></a>
         </div>
-        <div class="col-3 pb-5-sm col-7-sm">
-          <img src="assets/img/1.svg" class="img">
         </div>
       </div>
     </div>
 
-    <div class="px-7 px-0-sm flex justify-content-center py-10">
-      <div class="grid-container col-9 col-10-md grid-4 grid-1-md">
-        <div class="col">
+    <div class="px-20 px-5-md px-0-sm py-10">
+      <div class="grid-container justify-around">
+        <div class="col-2 col-10-sm mt-2 col-4-md">
           <div class="px-4 px-1-sm px-2-md">
               <p class="text-xl-3">Cross Platform</p>
               <p class="description mt-3">One code base or the same script can be used on any supported operating system that has krein installed.</p>
           </div>
         </div>
-        <div class="col">
+        <div class="col-2 col-10-sm mt-2 col-4-md">
           <div class="px-4 px-1-sm px-2-md">
               <p class="text-xl-3">Dynamic typing</p>
               <p class="description mt-3">Variables can handle any datatype 'Just leave it for the interpreter' this makes life very easy with weak typing included.</p>
           </div>
         </div>
-        <div class="col">
+        <div class="col-2 col-10-sm mt-2 col-4-md">
           <div class="px-4 px-1-sm px-2-md">
               <p class="text-xl-3">Reliable</p>
               <p class="description mt-3">As so long as you can build you project with krein, i think it won't cause alot of issues and it will have to work.</p>
           </div>
         </div>
-        <div class="col">
+        <div class="col-2 col-10-sm mt-2 col-4-md">
           <div class="px-4 px-1-sm px-2-md">
               <p class="text-xl-3">Concepts</p>
               <p class="description mt-3">New ideas ae to be embedded in the language for as long as we are still developing it so it becomes a tool for solve alot.</p>
@@ -129,7 +133,7 @@
     <div class="container-fluid mb-7 px-20 px-7-md px-2-sm">
       <div class="row justify-content-center">
         <div class="col-lg-5 d-flex flex-wrap align-items-center">
-          <h4 class="bold mt-5 dark">Simple Example</h4>
+          <h4 class="pnn">Simple Example</h4>
           <div class="editor mt-3 py-2 px-3">
             <code>use Time
 
@@ -159,8 +163,8 @@ for i in c
 
         <div class="col-lg-6 d-flex flex-column justify-content-center ">
 
-          <div class="">
-            <p class="text-xl-2 mt-4-sm">Something about krein as a language.</p>
+          <div class="mt-9-sm">
+            <p class="text-xl-2 pnn">Something about krein as a language.</p>
             <p>Here are some questions normally asked about the language from friends and one for our communication platforms.</p>
             <p class="text-xl">Speed</p>
             <p class="">Krein is not a fast language but this is being worked on, this project is still in beta version so as time passes expect things like speed to have increased greatly since it is even on of the aims for creating the language</p>
@@ -287,12 +291,8 @@ for i in c
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
