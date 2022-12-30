@@ -1,180 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Krein socket</title>
 
-  <title>Krein</title>
-  <meta content="" name="description">
-  <meta content="krein programming language" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/fancy.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/fancy.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
+<body id="page">
+	<div class="d-none" id="sides"></div>
 
-<body>
+	<div class="flex justify-center">
+		<div class="col-6 col-8-md col-10-sm">
+			<div class="px-2 mt-20">
+				<p class="text-center mt-4 pt-6 pt-3-md big-1 text-xl-7-md">Install krein Beta 1.0</p>
+				<p class="text-center txt text-xl-2 text-xl-1-md bold-3 mt-3">The <span class="bold">mac platform</span> is not supported now but linux and windows are. Source<br class="d-none-md"> code is not out yet <span class="bold">due to buggy code</span>.</p>
 
-  <!-- ======= Top Bar ======= -->
-  
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top py-2 d-flex align-items-center bg-nav">
-    <div class="container-fluid pn px-7 px-1-sm d-flex align-items-center justify-content-between">
-      <div class="flex w-100 align-items-center justify-around justify-between-sm px-2-sm">
-        <p class="logo"><a href="index.html">Kreinlang</a></p>
-        <nav id="navbar" class="navbar d-flex justify-content-between">
-          <ul>
-            <li><a class="nav-link text-xl scrollto" href="index.html">Documentation</a></li>
-            <li><a class="nav-link text-xl scrollto" href="download.html">Download</a></li>
-            <li><a class="nav-link text-xl scrollto" href="issues.html">News and updates</a></li>
-            <li><a class="nav-link text-xl scrollto" href="#contact">Contact us</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-      </div>
-    </div>
-  </header><!-- End Header -->
+				<div class="mt-10 mt-5-md">
+					<div class="grid-container grid grid-3 grid-2-md">
+						<div class="d-t col">
+							<div class="m-3">
+								<p class="ti py-3 py-1-md">Windows</p>
+								<div class="flex justify-center"><img src="assets/img/windows.png" class="img py-4"></div>
+								<div class="flex mt-4 mt-2-md justify-center"><a class="dw" href="bin/krein.zip"><p class="px-10 px-0-md px-3-md text-center get py-2 round-lg">download &nbsp; <i class="fas fa-arrow-right"></i></p></a></div>
+							</div>
+						</div>
+						<div class="d-t col">
+							<div class="m-3">
+								<p class="ti py-3 py-1-md">Linux</p>
+								<div class="flex justify-center"><img src="assets/img/linux.png" class="img py-4"></div>
+								<div class="flex mt-4 mt-2-md justify-center"><a class="dw" href="bin/krein.tar.gz"><p class="px-10 px-0-md px-3-md text-center get py-2 round-lg">download &nbsp; <i class="fas fa-arrow-right"></i></p></a></div>
+							</div>
+						</div>
+						<div class="d-t col">
+							<div class="m-3">
+								<p class="ti py-3 py-1-md">Mac</p>
+								<div class="flex justify-center"><img src="assets/img/apple.png" class="img py-4"></div>
+								<div class="flex mt-4 mt-2-md justify-center"><a class="dw" onclick="alert('No support yet.')"><p class="px-10 opacity-50 px-0-md px-3-md text-center get py-2 round-lg">download &nbsp; <i class="fas fa-arrow-right"></i></p></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing section-bg">
-      <div class="container">
+				<div class="mt-10">
+					<h2>Previous versions</h2>
+					<div class="mt-3 ">
+						<div class="flex overflow-x-scroll-md justify-between py-3">
+							<p class="px-3 bold">Windows</p>
+							<p class="px-3 bold">Linux</p>
+							<p class="px-3 bold">Mac</p>
+							<p class="px-3 bold">Source</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<p class="mb-20 pb-5"></p>
 
-        <div class="text-center mt-5">
-          <h2>Beta 1.0</h2>
-          <p class="mt-3">Please I request you to visit the website again to get the new often updated package.<br>This will include things like memory security, bugs and many more. Findout on the <a href="#">changelog</a> page.</p>
-        </div>
 
-        <div class="row mt-7 justify-content-around">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="box featured border">
-              <h3>Windows</h3>
-              <div><img src="assets/img/logo/windows.png" class="img-fluid img-slide"></div>
-              <div class="btn-wrap">
-                <a href="binary/win32/krein.zip" class="btn-buy">Download</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div class="box featured border">
-              <h3>Linux</h3>
-              <div><img src="assets/img/logo/linux.png" class="img-fluid img-slide"></div>
-              <div class="btn-wrap">
-                <a href="binary/linux64/krein.tar.gz" download="krein.tar.gz" class="btn-buy">Download</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box featured border">
-              <h3>Mac</h3>
-              <div><img src="assets/img/logo/apple.png" class="img-fluid img-slide"></div>
-              <div class="btn-wrap">
-                <a class="btn-buy">Download</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
-
-    
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tools</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Books</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4 id="contact">Contact Us</h4>
-            <p>
-              Kampala Uganda <br>
-              Nsambya, kirombe<br><br>
-              <strong>Phone:</strong> +256 701636188<br>
-              <strong>Email:</strong> krein256@gmail.com<br>
-            </p>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Variable Code</h3>
-            <p>A small software building company that builds custom softwares for clients like websites and specify custom appliactions.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/kreinlang/" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>krein</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a>Variable Code</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-
 </html>

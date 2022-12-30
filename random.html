@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maje</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/fancy.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body id="page">
+
+	<div class="flex justify-between">
+		<div id="sides" class="col-2 d-none-sm sidebar vh-100 overflow-y-scroll"></div>
+		
+		<div class="col-8 col-10-sm docs px-2 px-2-md vh-100 overflow-y-scroll">
+			<div class="px-10 px-2-lg px-0-sm py-5">
+				<div class="hr"></div>
+
+				<div class="col-6 col-8-lg col-9-md col-10-sm">
+						<div class="hr"></div>
+						<p class="head2">Random</p>
+
+						<p class="txt">This is designed to generate random numbers and data mathematically for Kreinlang using math alogorithms and formulars to accomplish the job. It inspired from Javascript <a href="https://www.npmjs.com/package/random-js?activeTab=readme" class="link">Random Js</a> library from npm. <random>.</p>
+
+						<div class="hr"></div>
+						<p class="head4">Notice from this module.</p>
+						<p class="txt">This library's random generated data is not safe to be used for security purposes. For security or cryptographic uses, you can wrap around its generated data and derive out some algorithms to generate safer numbers and more.</p>
+
+						<div class="hr"></div>
+						<p class="head4">Table of attributes.</p>
+
+						<div>
+							<div class="flex tb">
+								<a class="col-2" href="#shuffle"><p class="px-2 link py-2">shuffle</p></a>
+								<p class="px-2 col-8 py-2">Shuffles array data to a random different order.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#random"><p class="px-2 link py-2">random</p></a>
+								<p class="px-2 col-8 py-2">Generates a double number that can be used from the krein interpreter. The result is less than 1 or 1.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#pick"><p class="px-2 link py-2">pick</p></a>
+								<p class="px-2 col-8 py-2">Gets a random item from a provided array or strings since they are arrays too.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#string"><p class="px-2 link py-2">string</p></a>
+								<p class="px-2 col-8 py-2">Genrates a random string ranging from a_zA_Z including 0-1 and you can add more characters to fetch from the string.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#stringPool"><p class="px-2 link py-2">stringPool</p></a>
+								<p class="px-2 col-8 py-2">Generates the string from the provided characters and a specified length or the pool length.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#sample"><p class="px-2 link py-2">sample</p></a>
+								<p class="px-2 col-8 py-2">Chooses elements from an array randomy of a specified length.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#bool"><p class="px-2 link py-2">bool</p></a>
+								<p class="px-2 col-8 py-2">Generates a random boolean value true or false. Chances for each ocurring is equal no percentage chances favour one.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#real"><p class="px-2 link py-2">real</p></a>
+								<p class="px-2 col-8 py-2">Produces a random real number from the specified range.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#integer"><p class="px-2 link py-2">integer</p></a>
+								<p class="px-2 col-8 py-2">Produces a random integer number from the specified range.</p>
+							</div>
+						</div>
+
+
+						<div>
+							<div class="hr" id="shuffle"></div>
+							<p class="head5">random.<span class="bold">shuffle</span>( <i class="args">[1, 2, 3, 4]</i> )</p>
+							<p class="txt">Takes one argument and it should be an <a href="" class="link">array</a>. Procuces a shuffled list like <i>[3, 1, 4, 2]</i>.</p>
+						</div>
+						<div>
+							<div class="hr" id="random"></div>
+							<p class="head5">random.<span class="bold">random</span>( )</p>
+							<p class="txt">Uses no argument generating a number between 0.0000000001 and 1. You can them multiply it to units you want tens, hundreds or etc.</p>
+						</div>
+						<div>
+							<div class="hr" id="shuffle"></div>
+							<p class="head5">random.<span class="bold">pick</span>( <i class="args">[1, 2, 3, 4, 'a', 'b']</i> )</p>
+							<p class="txt">Takes one argument and it should be an <a href="" class="link">array</a>.</p>
+						</div>
+						<div>
+							<div class="hr" id="string"></div>
+							<p class="head5">random.<span class="bold">string</span>( <i class="args">int length, Opstr pool</i> )</p>
+							<p class="txt">Takes one argument or two, one is the length that should be an integer and argument two is optional, its a string of chars that you can add to the string pool that the string is generated from.</p>
+						</div>
+						<div>
+							<div class="hr" id="stringPool"></div>
+							<p class="head5">random.<span class="bold">stringPool</span>( <i class="args">str pool, int len</i> )</p>
+							<p class="txt">Here you enter your string charaters to generate from the string. This can be tweaked around to get random hex values by only providing 0-9a-fA-F, characters.</p>
+							<p class="txt mt-2">Takes two arguments a string and an integer for length of generated string.</p>
+						</div>
+						<div>
+							<div class="hr" id="sample"></div>
+							<p class="head5">random.<span class="bold">sample</span>( <i class="args">[1, 2, 3, 4], int length</i> )</p>
+							<p class="txt">Remember its generated array is in ascending order of the element position although random elements are gathered.</p>
+							<p class="txt mt-2">Takes two arguments an array and an integer for length of array to generate.</p>
+						</div>
+						<div>
+							<div class="hr" id="bool"></div>
+							<p class="head5">random.<span class="bold">bool</span>( )</p>
+							<p class="txt">No argument is used and chances of true or false resulting are equal.</p>
+						</div>
+						<div>
+							<div class="hr" id="real"></div>
+							<p class="head5">random.<span class="bold">real</span>( <span class="args">int min, Opint max</span>)</p>
+							<p class="txt">A real number is generated according to your max and min integers or 0.</p>
+						</div>
+						<div>
+							<div class="hr" id="integer"></div>
+							<p class="head5">random.<span class="bold">integer</span>( <span class="args">int min, Opint max</span>)</p>
+							<p class="txt">An int number is generated according to your max and min integers or 0.</p>
+						</div>
+
+					</div>
+				</div>
+
+				<p class="mt-20"></p>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

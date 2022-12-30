@@ -1,288 +1,114 @@
-/**
-* Template Name: Anyar - v4.9.0
-* Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+let sides = document.getElementById('sides');
+let page = document.getElementById('page');
+let off = [true, true];
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
-  }
+function NavBar(){
+	page.innerHTML += `
+		<div class="flex justify-end more">
+			<p id="more">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="#ffffff" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffffff" class="w-6 h-6">
+					 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+				</svg>
+			</p>
+		</div>
+		<nav class="flex flex-wrap-md px-7 px-2-md align-items-center justify-between">
+			<div class="flex col-10-md align-items-center justify-between py-3">
+				<a href="index.html"><p class="title">krein</p></a>
+				<p class="px-2 nav-toggle d-none d-block-md text-xl-2"><i class="fas fa-bars"></i></p>
+			</div>
+			<div class="flex d-none-md toggled flex-wrap-md col-10-md align-items-center justify-center">
+				<a class="col-10-md" href="getstarted.html"><p class="px-3 px-0-md py-2 py-2-md">Documentation</p></a>
+				<a class="col-10-md" href="download.html"><p class="px-3 px-0-md py-2 py-2-md">Install</p></a>
+				<a class="col-10-md"><p class="px-3 px-0-md py-2 py-2-md">Blog</p></a>
+				<a class="col-10-md"><p class="px-3 px-0-md py-2 py-2-md">Examples</p></a>
+				<a class="col-10-md" href="forum.html"><p class="px-3 px-0-md py-2 py-2-md">Forum</p></a>
+			</div>
+		</nav>
+	`;
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
+	let togz = document.getElementsByClassName('nav-toggle')[0];
+	let toz = document.getElementsByClassName('toggled')[0];
+	let sd = document.getElementsByClassName('sidebar')[0];
 
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
+	let more = document.getElementById('more');
 
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
+	togz.addEventListener('click', () => {
+		if (off[0]) {
+			toz.classList.remove('d-none-md');
+			off[0] = false;
+		} else {
+			toz.classList.add('d-none-md');
+			off[0] = true;
+		}
+	});
 
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
+	more.addEventListener('click', () => {
+		if (off[1]) {
+			sd.classList.add('col-10-sm');
+			sd.classList.remove('d-none-sm');
+			off[1] = false;
+		} else {
+			sd.classList.add('d-none-sm');
+			sd.classList.remove('col-10-sm');
+			off[1] = true;
+		}
+	});
 
-    if (!header.classList.contains('fixed-top')) {
-      offset += 70
-    }
 
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
+}
 
-  /**
-   * Header fixed top on scroll
-   */
-  let selectHeader = select('#header')
-  let selectTopbar = select('#topbar')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-        if (selectTopbar) {
-          selectTopbar.classList.add('topbar-scrolled')
-        }
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-        if (selectTopbar) {
-          selectTopbar.classList.remove('topbar-scrolled')
-        }
-      }
-    }
-    // window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
 
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    // window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
 
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
 
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
+function lazy(){
+	sides.innerHTML = `
+			<div class="py-2">
+					<p class="mt-15"></p>
+					<a href="getstarted.html"><p class="collapse pl-3 n nn">Get started</p></a>
 
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
+					<ul>
+						<a href="download.html"><li class="n pl-3 nn">Installation</li></a>
+					</ul>
 
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
+					<ul>
+						<a href="fund.html"><li class="n nn pl-2"><svg xmlns="http://www.w3.org/2000/svg" width="15px" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+						  <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+						</svg>
+						</span> Fundamentals</li></a>
+						<ul class="">
+							<a href="fund.html#data"><li class="n pl-9 pl-4-md">Datatypes</li></a>
+							<a href="fund.html#var"><li class="n pl-9 pl-4-md">Variables</li></a>
+							<a href="fund.html#fn"><li class="n pl-9 pl-4-md">Functions</li></a>
+							<a href="fund.html#obj"><li class="n pl-9 pl-4-md">Objects</li></a>
+							<a href="fund.html#if"><li class="n pl-9 pl-4-md">If statements</li></a>
+							<a href="fund.html#imp"><li class="n pl-9 pl-4-md">Import</li></a>
+							<a href="fund.html#sw"><li class="n pl-9 pl-4-md">Switch</li></a>
+							<a href="fund.html#try"><li class="n pl-9 pl-4-md">Try</li></a>
+							<a href="fund.html#wl"><li class="n pl-9 pl-4-md">While Loop</li></a>
+							<a href="fund.html#fl"><li class="n pl-9 pl-4-md">For</li></a>
+						</ul>
+					</ul>
 
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
+					<ul>
+						<a><li class="n nn pl-2"><svg xmlns="http://www.w3.org/2000/svg" width="15px" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+						  <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+						</svg>
+						</span> Modules</li></a>
+						<ul class="">
+							<a href="time.html"><li class="n pl-9 pl-4-md">Time</li></a>
+							<a href="math.html"><li class="n pl-9 pl-4-md">Math</li></a>
+							<a href="socket.html"><li class="n pl-9 pl-4-md">Socket</li></a>
+							<a href="random.html"><li class="n pl-9 pl-4-md">Random</li></a>
+							<a href="json.html"><li class="n pl-9 pl-4-md">Json</li></a>
+							<a href="#whatismaje"><li class="n pl-9 pl-4-md">File</li></a>
+							<a href="#whatismaje"><li class="n pl-9 pl-4-md">Path</li></a>
+						</ul>
+					</ul>
 
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
+					<p class="mb-15"></p>
+				</div>
+				`
+}
 
-  /**
-   * Clients Slider
-   */
-  new Swiper('.clients-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
-      }
-    }
-  });
-
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
-    }
-
-  });
-
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Initiate glightbox 
-   */
-  const gLightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
-  });
-
-})()
+setTimeout(lazy, 100);
+setTimeout(NavBar, 100);

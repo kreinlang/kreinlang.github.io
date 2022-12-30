@@ -1,0 +1,27 @@
+.string{
+	color: #1d9127 !important;
+}
+
+.key, .keywords{
+	color: #1b9ad1;
+}
+
+.fn, .functions{
+	color: red;
+}
+
+.argz{
+	color: #DF6A73;
+}
+
+.nums{
+	color: orange;
+}
+
+.print{
+	color: #008080;
+}
+
+.comment{
+	color: #7b776bb0;
+}

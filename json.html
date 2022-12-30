@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maje json</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/fancy.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/highlight.css">
+
+</head>
+<body id="page">
+
+	<div class="flex justify-between">
+		<div id="sides" class="col-2 d-none-sm col-10-sm sidebar vh-100 overflow-y-scroll"></div>
+		
+		<div class="col-8 col-10-sm docs px-2 px-2-md vh-100 overflow-y-scroll">
+			<div class="px-10 px-2-lg px-0-sm py-5">
+				<div class="hr"></div>
+
+				<div class="col-6 col-8-lg col-9-md col-10-sm">
+						<div class="hr"></div>
+						<p class="head2">Json (JavaScript Object Notation)</p>
+
+						<p class="txt">This is designed to interface with APIs aminly web and sockets since it is now one of the most used ways to transfer data among different languages. This json string is turned to a krein dictionary and back.</p>
+
+						<div class="hr"></div>
+						<p class="head4">Notice from this module.</p>
+						<p class="txt">Safely json syntax is required since krein passes the json string as a normal variable in its interpreter and later returns a dictianary so if a syntax error, the whole program breaks.</p>
+						<p class="txt mt-4">Json with comments is supported and others that include.</p>
+						<ul class="ml-4 mt-4">
+							<li class="link mt-2"><a href="">Arrays</a></li>
+							<li class="link mt-2"><a href="">Strings</a></li>
+							<li class="link mt-2"><a href="">Numbers</a></li>
+							<li class="link mt-2"><a href="">Objects</a></li>
+						</ul>
+
+						<div class="hr"></div>
+						<p class="head4">Table of attributes.</p>
+
+						<div>
+							<div class="flex tb">
+								<a class="col-2" href="#parse"><p class="px-2 link py-2">parse</p></a>
+								<p class="px-2 col-8 py-2">Converts a json string to a krein dictionary.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#jsonize"><p class="px-2 link py-2">jsonize</p></a>
+								<p class="px-2 col-8 py-2">Converts a krein dictionary to a json string.</p>
+							</div>
+						</div>
+
+
+						<div>
+							<div class="hr" id="parse"></div>
+							<p class="head5">JSON.<span class="bold">parse</span>( <i class="args">strjson</i> )</p>
+							<p class="txt">Takes one argument and it should be a <a href="" class="link">json string</a> in utf-8 encoding.</p>
+
+							<div class="hr" id="jsonize"></div>
+							<p class="head5">JSON.<span class="bold">jsonize</span>( <i class="args">dict {}</i> )</p>
+							<p class="txt">Takes one argument and it should be a <a href="" class="link">krein dictionary</a>. It will then return a json string but not formatted at all.</p>
+
+							<div class="code2 mt-3">
+<span class="key">import</span> JSON
+
+<span class="key">let</span> settings = <span class="string">`
+{
+	"fontSize": 15,
+	"color": "red",
+	"queries": [1020, 720, 480, 320, 220],
+}</span>`
+
+x = JSON.<span class="fn">parse</span>(<span class="argz">settings</span>)
+x[<span class="string">'font_size'</span>] = 17;
+
+toJson = JSON.<span class="fn">jsonize</span>(<span class="argz">x</span>)
+<span class="fn">print</span>(<span class="argz">toJson</span>)</div>
+						</div>
+
+					</div>
+				</div>
+
+				<p class="mt-20"></p>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/highlight.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Krein socket</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/fancy.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body id="page">
+
+	<div class="flex justify-between">
+		<div id="sides" class="col-2 d-none-sm sidebar vh-100 overflow-y-scroll"></div>
+		
+		<div class="col-8 col-10-sm docs px-2 px-2-md vh-100 overflow-y-scroll">
+			<div class="px-10 px-2-lg px-0-sm py-5">
+				<div class="hr"></div>
+
+				<div class="col-6 col-8-lg col-9-md col-10-sm">
+						<div class="hr"></div>
+						<p class="head2">Socket</p>
+
+						<p class="txt">This module uses the Berkeley sockets interface (BSD) to create socket connections, they are created by C wrapped from D and called from krein, so they are compatible to any language's socket connection.</p>
+
+						<div class="hr"></div>
+						<p class="head4">Notice from this module.</p>
+						<p class="txt">Created sockets are not powerful enough to connect to javascript's webSocket but this will be made possible in the coming updates so watch out for the coming updates and mostly upgrades.</p>
+						<ul class="ml-4 mt-4">
+							<li class="link mt-2"><a href="https://csperkins.org/teaching/2007-2008/networked-systems/lecture04.pdf">Berkeley sockets API</a></li>
+							<li class="link mt-2"><a href="https://csperkins.org/teaching/2007-2008/networked-systems/">Learn more - csperkins</a></li>
+						</ul>
+
+						<p class="txt mt-4">Learn more about Networking stuff and how to create web-sockets using the socket library. More features are gonna be added to this library.</p>
+
+						<div class="hr"></div>
+						<p class="head4">Table of attributes.</p>
+
+						<div>
+							<div class="flex tb">
+								<a class="col-2" href="#now"><p class="px-2 link py-2">newSocket</p></a>
+								<div class="col-8 px-2">
+									<p class="px-2 col-8 py-2">Creates a new socket object instance and returns the object.</p>
+									<div class="flex flex-wrap">
+										<p class="py-1 link text-md px-2">blocking</p>
+										<p class="py-1 link text-md px-2">nonblocking</p>
+										<p class="py-1 link text-md px-2">bind</p>
+										<p class="py-1 link text-md px-2">connect</p>
+										<p class="py-1 link text-md px-2">listen</p>
+										<p class="py-1 link text-md px-2">accept</p>
+										<p class="py-1 link text-md px-2">send</p>
+										<p class="py-1 link text-md px-2">recv</p>
+										<p class="py-1 link text-md px-2">close</p>
+										<p class="py-1 link text-md px-2">shutdown</p>
+										<p class="py-1 link text-md px-2">isalive</p>
+										<p class="py-1 link text-md px-2">hostname</p>
+										<p class="py-1 link text-md px-2">AF</p>
+									</div>
+								</div>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#epoch"><p class="px-2 link py-2">hostname</p></a>
+								<p class="px-2 col-8 py-2">Returns the unix time or epoch since computers started counting time.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#sleep"><p class="px-2 link py-2">getAddr</p></a>
+								<div class="px-2 col-8">
+									<p class="px-2 col-8 py-2">Returns an object with info on a provided network address, either a hostname or (hostname and port).</p>
+									<div class="flex flex-wrap">
+										<p class="py-1 link text-md px-2">addr</p>
+										<p class="py-1 link text-md px-2">port</p>
+										<p class="py-1 link text-md px-2">hostname</p>
+										<p class="py-1 link text-md px-2">servname</p>
+										<p class="py-1 link text-md px-2">addrfamily</p>
+									</div>
+								</div>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#date"><p class="px-2 link py-2">lastsocketError</p></a>
+								<p class="px-2 col-8 py-2">Retrieves the error message for the most recently encountered network error. <i class="link">*</i></p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#date"><p class="px-2 link py-2">unblockedFail</p></a>
+								<p class="px-2 col-8 py-2">Returns true if the last socket operation failed because the socket was not blocking, or if the socket was blocked and the operation timed out.<i class="link">*</i></p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#date"><p class="px-2 link py-2">getprotobyname</p></a>
+								<p class="px-2 col-8 py-2">Returns protocol number of the provided string argument.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#date"><p class="px-2 link py-2">getservbyname</p></a>
+								<p class="px-2 col-8 py-2"></p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#date"><p class="px-2 link py-2">getservbyport</p></a>
+								<p class="px-2 col-8 py-2"></p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#date"><p class="px-2 link py-2">gethostbyname</p></a>
+								<p class="px-2 col-8 py-2">Function uses a hostname argument and returns a list of IP addresses both IP4 and IP6 in the string formats.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#date"><p class="px-2 link py-2">AF</p></a>
+								<p class="px-2 col-8 py-2">Returns numbers corresponding to the addressFamily atribute. <i class="link">*</i></p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#date"><p class="px-2 link py-2">ST</p></a>
+								<p class="px-2 col-8 py-2">Returns numbers corresponding to the socktype atribute.</p>
+							</div>
+							<div class="flex tb">
+								<a class="col-2" href="#date"><p class="px-2 link py-2">SD</p></a>
+								<p class="px-2 col-8 py-2">Returns numbers corresponding to the shutdown Type atribute.</p>
+							</div>
+						</div>
+
+
+						<div class="hr"></div>
+						<p class="head4">Usage docs.</p>
+						<p class="txt mt-3">This module's docs are almost similar to python's socket module so for more info visit python's docs. <a class="link" href="https://realpython.com/python-sockets/">visit</a>.</p>
+
+					</div>
+				</div>
+
+				<p class="mt-20"></p>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
