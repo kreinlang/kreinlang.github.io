@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css');
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+@font-face {
+    font-family: prox;
+    src: url('../font/Proxima.ttf');
+}
 
 
 *{
-	font-family: 'Proxima Nova', sans-serif;                                   
+	font-family: 'Lato', sans-serif;                                   
 	padding: 0;
 	margin: 0;
 	font-weight: 400;
-	color: #374957;
+	color: #4b4b4bc0;
 	scroll-behavior: smooth;
+}
+
+.px{
+	font-family: prox !important;
 }
 
 .bold-3 {
@@ -25,12 +34,14 @@ body{
 .big{
 }
 
+
 nav{
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
-	background-color: #0B2239;
+	background-color: #082753f3;
+	z-index: 50;
 }
 
 .bot{
@@ -44,25 +55,37 @@ nav{
 }
 
 nav p{
-	font-size: 14px;
-	transition: all .5s linear;
+	font-size: 15px;
+	transition: all .2s linear;
 	cursor: pointer;
-	color: #ffffffb0;
-	font-weight: 600;
+	color: #ffffff;
 }
 
 nav p:hover{
-	color: #a6a6a6;
+	color: #ffffffb0;
+}
+
+.sidebar *{
+	list-style-type: none;
 }
 
 .title{
 	font-size: 25px;
-	font-weight: 700;
+	font-family: prox;
+	font-weight: 600;
 	color: white;
 }
 
 
 .bold-5{
+	font-weight: 500;
+}
+
+.bold-6{
+	font-weight: 600;
+}
+
+.bold{
 	font-weight: 500;
 }
 
@@ -84,15 +107,19 @@ nav p:hover{
 	font-size: 32px;
 	margin-bottom: 20px;
 	line-height: 37px;
-	font-weight: 700 !important;
+	color: #4b4b4b;
+	font-family: prox, sans-serif;
+	font-weight: 400;
 }
 
 .head4{
 	font-size: 25px;
 	margin-bottom: 16px;
 	line-height: 37px;
-	font-weight: 700;
 	padding-bottom: 4px;
+	color: #4b4b4b;
+	font-family: prox, sans-serif;
+	font-weight: 400;
 }
 
 .head5{
@@ -100,7 +127,9 @@ nav p:hover{
 	margin-bottom: 16px;
 	line-height: 37px;
 	padding-bottom: 4px;
-	font-weight: 600 !important;
+	color: #4b4b4b;
+	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 400;
 }
 
 .args{
@@ -136,7 +165,7 @@ nav p:hover{
 }
 
 .link *, .link{
-	color: #1273EB;
+	color: #20AA76;
 	cursor: default;
 }
 
@@ -166,7 +195,7 @@ nav p:hover{
 }
 
 .sidebar{
-	background-color: #EFF3F6;
+	border-right: 1px solid #00000020;
 }
 
 .sidebar *{
@@ -212,6 +241,10 @@ nav p:hover{
 }
 
 
+.ddt{
+	border: 1px solid #00000020;
+}
+
 
 .d-t img{
 	width: 40%;
@@ -226,13 +259,18 @@ nav p:hover{
 }
 
 .dw p{
-	background-color: #2CAE52;
+	background-color: #4299E1;
 	color: white;
 	width: max-content;
+	font-weight: 600;
+}
+
+.dw::nth-child('last'){
+	pointer-events: none;
 }
 
 .get{
-	background-color: #2CAE52;
+	background-color: #4299E1;
 	transition: all .1s linear;
 	color: white;
 }
@@ -259,7 +297,7 @@ nav p:hover{
 
 .bn2{
 	border: 1px solid #CFD9E0;
-	background-color: #2CAE52;
+	background-color: #4299E1;
 }
 
 .bn2{
@@ -268,20 +306,21 @@ nav p:hover{
 
 .more{
 	position: fixed;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	top: 70px;
 	right: 10px;
-	display: flex;
 	align-items: center;
-	justify-content: center;
-	color: #1273EB;
-	background-color: #1273EB;
+	background-color: #4299E1;
 	width: 47px;
 	height: 47px;
 	border-radius: 5px;
 }
 
+.sect{
+	border-left: 2px solid #00000015;
+}
 
-
+.nav-toggle, .nav-toggle *{
+	color: #ffffffbd;
+}

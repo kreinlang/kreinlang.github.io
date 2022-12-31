@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rain modules</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/fancy.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body id="page">
+
+	<div class="flex flex-wrap mt-15 justify-center">
+		<div id="sides" class="col-1 col-2-lg mt-2 d-none-sm sidebar"></div>
+		
+		<div id='docs' class="col-5 col-7-md col-10-sm docs">
+			<div class=" pl-5 px-2-md py-5">
+
+				<div class="px-2">
+						<p class="head2">Console</p>
+
+						<p class="txt">This module is very essential because it deals with the interpreter core functions that are used to check datatypes states print there info to the terminal. It is even imported directly to the runtime for you.</p>
+
+						<div class="hr"></div>
+						<p class="head4 link underlined">List of functions in the console module.</p>
+						<p class="txt mt-3">Since console is imported for you, you are not expected to re-import it unless otherwise but even you will still be accessing the same pointer int memory.</p>
+						<ul class="ml-4 mt-4 pl-2" id="lib"></ul>
+
+						<div class="hr"></div>
+						<p class="head4 link underlined">Notice for this module.</p>
+						<p class="txt mt-3">These functions are similar to python's <a href="https://docs.python.org/3/library/builtins.html" class="link">builtins</a> module. So its docs are the same to this one for now.</p>
+
+
+					</div>
+				</div>
+
+				<p class="mt-20"></p>
+			</div>
+			<div class="col-2" id="ads"></div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<script type="text/javascript">
+		let mod = ['len', 'attr', 'print', 'next', 'iter', 'readline', 'type', 'super', 'range', 'exit', 'string', 'number', 'array', 'bytes', 'delAttr', 'getAttr', 'setAttr'];
+		mod.sort()
+			add = document.getElementById('lib');
+			code = ''
+
+		for(i = 0; i < mod.length; i++){
+			code += `<li class="link mt-2"><a href="${mod[i]}.html">${mod[i]}</a></li>`
+		}
+
+		add.innerHTML = code;
+	</script>
+</body>
+</html>

@@ -10,81 +10,62 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<style type="text/css">
-		.up{
-			/*font-weight: 300;*/
-			line-height: 34px;
-		}
-
-		body{
-			background-image: url('assets/img/wave.svg');
-			background-repeat: no-repeat;
+		.land{
+			background-image: url('assets/img/rain.jpg');
 			background-size: cover;
+			background-repeat: no-repeat;
+			overflow: hidden;
 		}
 
-		.r1, .r2, .r3, .r4, .r5, .r6, .r7, .r8{
-			position: absolute;
-			bottom: 10px;
-			right: 20px;
-			width: 50px;
-			z-index: 20;
+		.land p{
+			color: white;
+			z-index: 30;
+			font-family: prox !important;
 		}
 
-		.r1{
-			top: 100px;
+		.px{
+			font-family: prox !important;
 		}
 
-		.r2{
-			top: 120px;
-			left: 30px;
+		.shade{
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background-color: rgba(0,0,0,.5);
+			z-index: 1;
 		}
 
-		.r3{
-			bottom: 10%;
-			left: 30%;
+		.work{
+			z-index: 2;
 		}
 
-		.r4{
-			bottom: 15%;
-			right: 20%;
+		.man{
+			line-height: 25px;
 		}
-
-		.r5{
-			bottom: 60%;
-			right: 20%;
-		}
-
-		.r6{
-			bottom: 35%;
-			left: 20%;
-		}
-
 	</style>
 
 </head>
 <body id="page" class="pos-relative vh-100 overflow-y-scroll">
+	<div class="mt-12">
+		<p class="px-2 text-center py-3">Now version 0.1 is our lastest version 2023. <a href="getstarted" class="bold link">check out</a>.</p>
+	</div>
+	<div class="z-30 d-none"><div id="sides" class="d-none"></div></div>
 
-	<img src="assets/img/json-file.png" class="r1 rotate-245">
-	<img src="assets/img/map.png" class="r2 rotate-15">
-	<img src="assets/img/password.png" class="r3 rotate-15">
-	<img src="assets/img/qr-code.png" class="r4 rotate-15">
-	<img src="assets/img/ram.png" class="r5 rotate-15">
-	<img src="assets/img/unplugged.png" class="r6 rotate-270">
-	<!-- <img src="assets/img/unplugged.png" class="roc3 rotate-15"> -->
+	<div class="vh-80 land bg-center-md pos-relative">
+		<div class="pos-absolute z-20 shade"></div>
+		<div class="px-2 work z-30 pos-relative">
+			<p class="text-center text-white text-xl-8 pt-15">The Friendly Programming Language.</p>
+			<p class="text-center text-white text-lg pt-2">Its fun to use indeed. <a class="link underlined" href="getstarted.html">Check out</a></p>
+			<div class="flex justify-center"><a href="getstarted.html"><p class="text-center text-white text-lg py-3 px-15 round-sm bold-6 bg-blue-500 w-max-content mt-3">Get Started</p></a></div>
 
-	<div class="z-30">
-		<div id="sides" class="d-none"></div>
-		
-		<div class="flex justify-center">
-			<div class="col-6 col-8-md col-10-sm px-2-sm mt-20">
-				<div class="py-10 pb-10-sm pt-5-sm">
-					<p class="bold-4 big-1 text-xl-5-sm">A Simple, Friendly Scripting<br class="d-none-sm">programming language</p>
-					<p class="mt-7 text-xl-2 up">Krein is a high-level, simple programming language. It puts forward commonly used stuff of programming but also shileding against the complicated ones <span class="bold">that are not normally used in daily applications</span>.</p>
+		</div>
+	</div>
 
-					<p class="mt-7 mt-4-sm text-xl-2 up">Get version <span class="bold">1 beta</span> on your computer.</p>
-
-					<a class="mt-10" href="download.html"><p class="bn2 mt-15 w-max-content opacity-80-h transition-linear round-lg text-xl py-3 pl-5 pr-20">Install Krein</p></a>
-				</div>
-			</div>
+	<div class="px-2">
+		<p class="text-center text-xl-2 prox mt-7">Rain simplifies building applications with its easy straight forward approaches.</p>
+		<div class="flex justify-center pb-20">
+			<p class="text-center prox mt-3 col-5 col-8-lg col-10-sm man">Robust and scalable programs are possible with this language, user production apps can come in matter of hours, days and a week but not years. Since Rain is very easy to use, its architecture is object oriented, module and APIs driven that bring along the easiness to use.</p>
 		</div>
 	</div>
 
